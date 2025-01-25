@@ -1,0 +1,767 @@
+/* Basic Reset */
+/*ABOUT US PAGE*/
+body, html {
+    margin: 15px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#0c0c0c;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Logo Image - Make it small and round */
+.navbar .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hero Banner (abt us & home*/
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this based on your desired banner height */
+    overflow: hidden;
+  }
+  
+  .hero-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without stretching */
+    object-position: center; /* Optionally adjust the position of the image */
+  }
+  
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(106, 2, 115);
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgb(246, 246, 249);
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Search Container for all the 7 pages*/
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #222;
+    color: #fff;
+    width: 300px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1101f0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Section Container (home page) */
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.section-container:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling (home page)*/
+.section-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 87, 51, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(255, 165, 0, 0.9);
+}
+
+/* Text Box Styling (about us)*/
+.text-box {
+    max-width: 500px;
+}
+
+/* Heading Styling (about us) */
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f0a500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Paragraph Text Styling (about us) */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Styles (for all the 7 pages) */
+footer {
+    background-color: #121212; /* Dark background for a gaming vibe */
+    color: white; /* White text for contrast */
+    padding: 40px 20px; /* Padding around the footer */
+    text-align: center; /* Center text alignment */
+    font-family: 'Arial', sans-serif; /* Clean font for readability */
+    border-top: 3px solid #00FF00; /* Green border for a techy look */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width of footer content */
+    margin: 0 auto; /* Center align the content */
+    display: flex;
+    justify-content: space-between; /* Space out contact info and social media */
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.contact-info {
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 10px 0; /* Add space between paragraphs */
+}
+
+.contact-info a {
+    color: #00FF00; /* Green color for email links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact-info a:hover {
+    color: #fff; /* Change to white when hovered */
+}
+
+.social-media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow icons to wrap on small screens */
+}
+
+.social-media p {
+    flex-basis: 100%; /* Make the "Follow Us" text take up full width */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    width: 40px; /* Size of icons */
+    height: 40px;
+    margin: 0 15px; /* Space between icons */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth transition */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    opacity: 0.8; /* Slight fade effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888; /* Lighter text color */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center align all content */
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        margin: 10px; /* Reduce margin between icons on smaller screens */
+    }
+}
+
+/*About us section styling*/
+.what-we-offer{
+    font-size: 2.5rem;        /* Adjust the size of the heading */
+    font-weight: bold;       /* Make the text bold */
+    text-align: center;      /* Center-align the text */
+    color: #ffffff;          /* Set text color (white in this case) */
+    margin-top: 20px;        /* Add spacing above the heading */
+    margin-bottom: 20px;     /* Add spacing below the heading */
+    text-transform: uppercase; /* Make all text uppercase */
+    letter-spacing: 2px;     /* Add space between letters for a clean look */
+}
+
+.first-two-sections{
+    display: flex;
+    justify-content: space-between; /* Distribute space between the two couples */
+    gap: 20px; /* Space between each couple */
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+/* Style each couple */
+.aboutus-container {
+    display: flex;
+    align-items: center; /* Vertically center the image and text */
+    justify-content: flex-start; /* Align items to the start of the container */
+    width: 48%; /* Make each couple take up half of the container's width */
+}
+
+/* Style for the image */
+.section-img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between the image and the text */
+}
+
+/* Style for the text next to the image */
+.abt-text {
+    flex: 1; /* Allow the text to take the remaining space */
+}
+.map-text {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 20px; /* Add spacing between text and image */
+}
+
+.branch-pic {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Optional: Extra spacing */
+}
+
+
+.store-info {
+    margin-bottom: 20px; /* Add space between the description and image */
+}
+/* Ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .first-two-sections, .second-two-sections {
+        flex-direction: column; /* Stack the couples vertically on smaller screens */
+    }
+
+    .aboutus-container {
+        width: 100%; /* Make each couple take the full width of the container */
+        margin-bottom: 20px; /* Add space between stacked couples */
+    }
+}
+.second-two-sections{
+    display: flex;
+    justify-content: space-between; /* Distribute space between the two couples */
+    gap: 20px; /* Space between each couple */
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+/* Style each couple */
+.aboutus-container {
+    display: flex;
+    align-items: center; /* Vertically center the image and text */
+    justify-content: flex-start; /* Align items to the start of the container */
+    width: 48%; /* Make each couple take up half of the container's width */
+    color: #9d6fb0;
+}
+h3{
+    color: #9d6fb0;
+}
+/* Style for the image */
+.section-img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between the image and the text */
+}
+
+/* Style for the text next to the image */
+.abt-text {
+    flex: 1; /* Allow the text to take the remaining space */
+}
+.section-img{
+    height: 220px;
+    width: 220px;
+}
+/* Ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .first-two-sections, .second-two-sections {
+        flex-direction: column; /* Stack the couples vertically on smaller screens */
+    }
+
+    .aboutus-container {
+        width: 100%; /* Make each couple take the full width of the container */
+        margin-bottom: 20px; /* Add space between stacked couples */
+    }
+}
+.abt-text{
+    color:#f0a500
+}
+
+/*outlets (about us)*/
+/* Style the header */
+h2 {
+    font-size: 24px;
+    color: #9b59b6; /* Purple color */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Create a text box style for the outlet list */
+.outlet-list {
+    background-color: #000; /* Black background for the box */
+    border: 2px solid #9b59b6; /* Purple border */
+    padding: 20px; /* Padding inside the box */
+    width: 80%; /* Adjust width, or set to 100% for full width */
+    margin: 0 auto; /* Center the box horizontally */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+}
+
+.outlet-list {
+    background-color: #393333; /* Light gray background */
+    border: 2px solid #9b59b6; /* Purple border */
+    padding: 20px;            /* Spacing inside the div */
+    border-radius: 10px;      /* Rounded corners */
+    max-width: 600px;         /* Limit the width of the section */
+    margin: 20px auto;        /* Center the div with margin */
+    font-family: Arial, sans-serif; /* Set font style */
+    color: #4CAF50;           /* Text color (green) */
+    font-size: 24px;          /* Adjust font size */
+    text-align: left;         /* Align text to the left */
+}
+
+.outlet-list ol {
+    padding-left: 20px;       /* Add spacing before the numbers */
+    list-style-position: inside; /* Ensure numbers align closer to the text */
+    margin: 0;
+}
+
+.outlet-list li {
+    margin-bottom: 10px;      /* Add space between list items */
+    font-size: 20px;          /* Slightly smaller font size for the items */
+    color: #4CAF50;           /* Green color for text */
+}
+
+  
+  .intro-description p {
+    font-size: 16px;         /* Paragraph font size */
+    color: #4CAF50;             /* Medium gray color */
+    line-height: 1.6;        /* Space between lines */
+    text-align: justify;     /* Justify the text */
+  }
+  
+
+/* Style the outlet box */
+.outlet-box {
+    background-color: #000; /* Black background */
+    border: 2px solid #9b59b6; /* Purple border */
+    padding: 20px;
+    width: 80%; /* Adjust width, or set to 100% for full width */
+    margin: 0 auto; /* Center the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    margin-bottom: 20px; /* Space between outlets */
+}
+
+/* Style for the heading */
+.outlet-box h3 {
+    font-size: 24px;
+    color: #9b59b6; /* Purple color */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Container for map and text */
+.outlet-map-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space out the map and the text */
+    align-items: flex-start; /* Align map and text at the top */
+}
+
+/* Style the map container */
+.map-container {
+    flex: 0 0 60%; /* Ensures the map takes up 60% of the container */
+    max-width: 60%; /* Prevents the map from expanding beyond this width */
+    margin-right: 20px; /* Space between map and text */
+}
+
+/* Style the text container (map-text) */
+.map-text {
+    flex: 0 0 35%; /* Ensures the text takes up 35% of the container */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    padding-left: 10px;
+    max-width: 35%; /* Prevents the text from expanding beyond this width */
+}
+
+/* Style the bullet point list */
+.store-info {
+    color: #fff; /* White text color for the list */
+    font-size: 16px; /* Same size as the description text */
+    padding-left: 20px; /* Indentation of bullet points */
+    list-style-type: disc; /* Default bullet points */
+}
+
+.store-info li {
+    margin-bottom: 8px; /* Space between bullet points */
+    font-family: Arial, sans-serif; /* Set font for list items */
+}
+
+/* Responsive Design: Adjust map and text on smaller screens */
+@media (max-width: 768px) {
+    .outlet-map-container {
+        flex-direction: column; /* Stack map and text vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .map-container {
+        width: 100%; /* Full width for the map */
+        margin-bottom: 15px; /* Space below the map */
+    }
+
+    .map-text {
+        width: 100%; /* Full width for the text */
+    }
+}
+/* Style for the table */
+.store-table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Merge table borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+/* Style for the table headers */
+.store-table th {
+    background-color: #9b59b6; /* Purple background */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for the table data cells */
+.store-table td {
+    background-color: #333; /* Dark background for data cells */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #9b59b6; /* Purple border around cells */
+}
+
+/* Add hover effect on rows */
+.store-table tr:hover {
+    background-color: #4CAF50; /* Neon Green on hover */
+}
+ /* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f9f9f8;
+}
+
+/* Hamburger Menu (Hidden by Default on Desktop) */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    align-items: right;
+    background-color: #fffcfc00;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hamburger Menu (Hidden by Default on Desktop) */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none; /* Initially hide the hamburger menu */
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Display the hamburger menu on hover of its parent (e.g., the navigation bar) */
+.nav:hover .hamburger {
+    display: flex; /* Show the hamburger menu when hovered */
+    align-items: center; /* Ensure it's properly aligned */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f9f8f7;
+}
+.menu-toggle:checked + .hamburger + nav .nav-links {
+    display: flex;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Hide the navigation menu by default */
+    .hamburger {
+        display: block; /* Display the hamburger icon */
+    }
+
+    .nav-links {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust if needed based on header height */
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    .menu-toggle:checked + .hamburger + nav .nav-links {
+        display: flex; /* Make the menu visible when the checkbox is checked */
+    }
+}
+
+/*(UPCOMING GAMES)intro*/
+.intro-description{
+    background-color: #393333; /* Light gray background */
+    border: 2px solid #9b59b6;   /* Gray border */
+    padding: 20px;            /* Spacing inside the div */
+    border-radius: 10px;      /* Rounded corners */
+    max-width: 600px;         /* Limit the width of the section */
+    margin: 20px auto;        /* Center the div with margin */
+    font-family: Arial, sans-serif; /* Set font style */
+  }
+  
+  .intro-description {
+    font-size: 24px;         /* Size of the heading */
+    color: #4CAF50;             /* Dark gray color */
+    text-align: center;      /* Center the heading */
+    margin-bottom: 10px;     /* Space below the heading */
+  }
+  
+  .intro-description p {
+    font-size: 16px;         /* Paragraph font size */
+    color: #4CAF50;             /* Medium gray color */
+    line-height: 1.6;        /* Space between lines */
+    text-align: justify;     /* Justify the text */
+  }
+  h4 {
+    font-size: 25px;
+    color: #9b59b6; /* Purple color */
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow:#fff;
+}
+/*MEDIA(RESPONSIVE)*/
+
+    @media (max-width: 768px) {
+        .hero-banner {
+          grid-template-columns: 1fr; /* Single column on smaller screens */
+        }
+      }
+
+@media (max-width: 768px) {
+    .hero-banner {
+      background:no-repeat center center/cover;
+      position: relative;
+    }
+  }
+  /*upcoming games page image alignings and styles*/
+  .upcoming-games-images{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    align-content: center;
+  }
+  
+  /* Grid container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Spacing between items */
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  /* Individual item styles */
+  .item {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Image container with hover effect */
+  .image-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: #ccc;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hidden release date */
+  .release-date {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Show release date on hover */
+  .image-container:hover .release-date {
+    transform: translateY(0);
+  }
+  
+  /* Name styles */
+  .name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*makes the image fill the box*/
+  }
+.name{
+    color: #f0a500;
+    text-shadow: #4CAF50;
+}
+/*CONSOLES*/
